@@ -1,0 +1,15 @@
+artifact_path: file:///c:/Users/samar/Downloads/PatrolIQ/mlruns/1/models/m-2d12fb1fdbd4414cbe17cb1dd5745903/artifacts
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-2d12fb1fdbd4414cbe17cb1dd5745903
+model_size_bytes: 240656
+model_uuid: m-2d12fb1fdbd4414cbe17cb1dd5745903
+prompts: null
+run_id: 71941af6d2de4347a408280558982d91
+utc_time_created: '2026-07-06 18:53:13.874108'

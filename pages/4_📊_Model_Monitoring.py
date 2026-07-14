@@ -4,13 +4,7 @@ os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
 import streamlit as st
 import pandas as pd
 import mlflow
-import plotly.express as px
-
-
-
-import streamlit as st
-import pandas as pd
-import mlflow
+from mlflow.tracking import MlflowClient
 import plotly.express as px
 
 # 1. Page Configuration
@@ -26,8 +20,9 @@ MLFLOW_TRACKING_URI = "sqlite:///mlflow.db"
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 
 try:
-    # Fetch all experiments
-    experiments = mlflow.search_experiments()
+    # Fetch all experiments using the official Client for cloud compatibility
+    client = MlflowClient()
+    experiments = client.search_experiments()
     exp_names = [exp.name for exp in experiments]
     
     if not exp_names:

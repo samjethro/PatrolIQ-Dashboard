@@ -5,3 +5,4 @@ plotly
 scikit-learn
 mlflow
 pyarrow
+protobuf==4.25.3

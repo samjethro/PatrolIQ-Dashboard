@@ -3,7 +3,7 @@ pandas
 numpy
 plotly
 scikit-learn
-mlflow
+mlflow==3.14.0
 pyarrow
 protobuf==4.25.3
 setuptools==69.5.1
